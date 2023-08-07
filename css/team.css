@@ -1,0 +1,217 @@
+.team {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.33rem 0 3.33rem 0;
+}
+
+.team__image {
+    width: 100%;
+    position: relative;
+}
+
+.team__image img {
+    width: 100%;
+}
+
+.team__image_title {
+    font-family: "Cormorant Garamond Reg",sans-serif;
+    font-size: 2.66rem;
+    line-height: 1;
+    text-align: center;
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    font-weight: 600;
+}
+
+.team__left {
+    width: 65%;
+}
+
+.team__right {
+    width: 25%;
+}
+
+.team__title {
+    font-family: "Cormorant Garamond Reg",serif;
+    font-size: 2.66rem;
+    line-height: 1;
+    color: #405861;
+    letter-spacing: .033rem;
+    padding: 1rem 0;
+}
+
+.team__text {
+    font-family: 'Open Sans Reg', sans-serif;
+    font-size: .8rem;
+    line-height: 1.7;
+    color: #879296;
+    letter-spacing: .033rem;
+}
+
+.team__images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team__images img {
+    width: 50%;
+    padding-left: 1.66rem;
+}
+
+.team__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 0;
+}
+
+.team__item {
+    width: 23%;
+    margin-bottom: 4rem;
+}
+
+.team__item-image {
+    width: 100%;
+}
+
+.team__item-image img {
+    width: 100%;
+}
+
+.team__item-name {
+    font-family: "Cormorant Garamond Reg",serif;
+    color: #005E7F;
+    font-size: 1.5rem;
+    line-height: 1;
+    text-align: center;
+    font-weight: 500;
+    padding: 1.33rem 0;
+}
+
+.team__item-text {
+    font-family: 'Open Sans Reg', sans-serif;
+    font-size: .8rem;
+    line-height: 1.7;
+    color: #879296;
+    letter-spacing: .033rem;
+}
+
+.timetable {
+    width: 100%;
+    padding: 3rem;
+    margin: 0 0 2rem 0;
+}
+
+.timetable__title {
+    font-family: "Cormorant Garamond Reg",serif;
+    font-size: 2.66rem;
+    line-height: 1;
+    color: #405861;
+    letter-spacing: .033rem;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.timetable__txt {
+    font-family: 'Open Sans Reg', sans-serif;
+    font-size: .8rem;
+    line-height: 1.7;
+    color: #879296;
+    letter-spacing: .033rem;
+    text-align: center;
+    width: 66%;
+    margin: 0 auto 3rem auto;
+}
+
+.timetable__table {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.table__item {
+    width: 12.5%;
+    text-align: center;
+    padding: 1.33rem;
+    border-left: 1px solid rgba(0, 0, 0, .1);
+    border-right: 1px solid rgba(0, 0, 0, .1);
+    text-decoration: none;
+    transition: .5s;
+}
+
+.select-able {
+    transition: .8s;
+}
+
+.select-able:hover {
+    background-color: #405861;
+}
+
+.select-able p:first-child,
+.select-able p:last-child {
+    transition: .5s;
+}
+
+.select-able:hover > p:first-child,
+.select-able:hover > p:last-child {
+    color: white;
+}
+
+.table__item p:first-child {
+    font-family: "Cormorant Garamond Reg",serif;
+    font-size: 1.1rem;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: .33rem;
+}
+
+.table__item p:last-child {
+    font-family: "Open Sans Reg",sans-serif;
+    font-size: .7rem;
+    line-height: 1;
+    color: #879296;
+    text-align: center;
+}
+
+.empty p:first-child,
+.empty p:last-child {
+    color: transparent;
+}
+
+.week {
+    color: gray;
+    text-transform: uppercase;
+    font-family: "Work Sans",sans-serif;
+    font-size: .8rem;
+    line-height: 1;
+    font-weight: 600;
+    padding: 2rem 0;
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.blue {
+    background-color: #F2FAFD;
+}
+
+.pink {
+    background-color: #FFF9F5;
+}
+
+.range {
+    color: gray;
+    font-family: "Work Sans",sans-serif;
+    font-size: .8rem;
+    line-height: 1;
+    font-weight: 600;
+    padding: 2rem 0;
+}

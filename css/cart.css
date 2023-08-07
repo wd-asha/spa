@@ -1,0 +1,246 @@
+.cart {
+    width: 100%;
+    padding: 6rem 0 6rem 0;
+}
+
+.cart__products {
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.cart__image {
+    width: 100%;
+    position: relative;
+}
+
+.cart__image img {
+    width: 100%;
+}
+
+.cart__image_title {
+    font-family: "Cormorant Garamond Reg",sans-serif;
+    font-size: 2.66rem;
+    line-height: 1;
+    text-align: center;
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 60%;
+    font-weight: 600;
+}
+
+.cart__title {
+    font-family: "Cormorant Garamond Reg",serif;
+    font-size: 2.66rem;
+    line-height: 1;
+    color: #405861;
+    letter-spacing: .033rem;
+    padding: 1rem 0;
+}
+
+.cart__products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.cart__products_title {
+    width: 16.66%;
+    font-family: "Cormorant Garamond Reg",serif;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #405861;
+    letter-spacing: .02rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.font-white {
+    color: transparent;
+}
+
+.cart__products_delete {
+    width: 16.66%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: rgba(0, 0, 0, .5);
+    transition: .5s;
+    text-align: center;
+}
+
+.cart__products_delete:hover {
+    color: darkred;
+}
+
+.cart__products_image {
+    padding: 1.33rem 3.33rem;
+    width: 16.66%;
+    text-align: center;
+}
+
+.cart__products_image img {
+    width: 100%;
+}
+
+.cart__products_name {
+    width: 16.66%;
+    font-family: "Cormorant Garamond Reg",serif;
+    font-size: 1.1rem;
+    line-height: 1rem;
+    color: #405861;
+    letter-spacing: .02rem;
+    padding: 1rem 0;
+}
+
+.cart__products_price,
+.cart__products_price span {
+    width: 16.66%;
+    font-family: "Open Sans Reg",serif;
+    font-size: .85rem;
+    line-height: 1rem;
+    color: #607881;
+    letter-spacing: .02rem;
+}
+
+.cart__products_qty {
+    width: 16.66%;
+    font-family: "Open Sans Reg",serif;
+    font-size: .85rem;
+    line-height: 1rem;
+    color: #607881;
+    letter-spacing: .02rem;
+}
+
+.cart__products_subtotal,
+.cart__products_subtotal span {
+    width: 16.66%;
+    font-family: "Open Sans Reg",serif;
+    font-size: .85rem;
+    line-height: 1rem;
+    color: #607881;
+    letter-spacing: .02rem;
+}
+
+.cart__qty {
+    display: grid;
+    grid-template-areas:
+            "qty__number qty__plus"
+            "qty__number qty__minus";
+    width: 45%;
+}
+
+.qty__number {
+    grid-area: qty__number;
+    font-family: 'Open Sans Reg', sans-serif;
+    font-size: .85rem;
+    line-height: 1.8rem;
+    color: rgba(0, 0, 0, .66);
+    padding: .5rem 1.1rem;
+    border: 1px solid rgba(0, 0, 0,.33);
+    cursor: default;
+}
+
+.qty__plus {
+    grid-area: qty__plus;
+    font-family: 'Open Sans Reg', sans-serif;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: rgba(0, 0, 0, .66);
+    padding: .2rem .66rem 0 .66rem;
+    border-top: 1px solid rgba(0, 0, 0,.33);
+    border-right: 1px solid rgba(0, 0, 0,.33);
+    cursor: pointer;
+}
+
+.qty__minus {
+    grid-area: qty__minus;
+    font-family: 'Open Sans Reg', sans-serif;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: rgba(0, 0, 0, .66);
+    padding: 0 .66rem 0 .66rem;
+    border-top: 1px solid rgba(0, 0, 0,.33);
+    border-right: 1px solid rgba(0, 0, 0,.33);
+    border-bottom: 1px solid rgba(0, 0, 0,.33);
+    cursor: pointer;
+}
+
+.coupon {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.coupon__left {
+    text-align: left;
+}
+
+.coupon__left input {
+    text-align: left;
+    font-family: "Open Sans Reg",serif;
+    font-size: .85rem;
+    line-height: 1rem;
+    color: #607881;
+    padding: .8rem;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, .3);
+    margin-right: 1rem;
+    transform: translateY(-1.1rem);
+}
+
+.coupon__right,
+.coupon__right span {
+    text-align: right;
+    font-family: "Open Sans Reg",serif;
+    font-size: 1rem;
+    line-height: 2rem;
+    color: #607881;
+    letter-spacing: .02rem;
+}
+
+.coupon__link {
+    font-family: 'Open Sans Reg', sans-serif;
+    font-size: .7rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    transform: translateX(0);
+    transition: 1s;
+    visibility: visible;
+    display: inline-block;
+    padding: .9rem 2.33rem;
+    font-weight: 600;
+    letter-spacing: .066rem;
+    position: relative;
+    overflow: hidden;
+    opacity: .8;
+    border: 1px solid #405861;
+}
+
+.coupon__link:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: -100%;
+    transition: .5s;
+    background-color: #405861;
+    z-index: -1;
+}
+
+.coupon__link:hover {
+    color: white;
+}
+
+.coupon__link:hover:after {
+    left: 0;
+}
+
+.checkout {
+    width: 100%;
+    text-align: right;
+}

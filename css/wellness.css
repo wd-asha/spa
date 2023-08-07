@@ -1,0 +1,180 @@
+.wellness {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 8rem 0 8rem 0;
+}
+@media (max-width: 1280px) {
+    .wellness {
+        padding-top: calc(3rem + (8 - 3) * ((100vw - 20rem) / (80 - 20)));
+        padding-bottom: calc(1rem + (8 - 1) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+
+.wellbeing {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 8rem 0 8rem 0;
+}
+@media (max-width: 1280px) {
+    .wellbeing {
+        padding-top: calc(0rem + (8 - 0) * ((100vw - 20rem) / (80 - 20)));
+        padding-bottom: calc(1rem + (8 - 1) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+
+.wellness__item-image {
+    width: 50%;
+    position: relative;
+}
+@media (max-width: 700px) {
+    .wellness__item-image {
+        width: 96%;
+    }
+}
+.wellbeing__item-image {
+    width: 50%;
+    position: relative;
+}
+@media (max-width: 700px) {
+    .wellbeing__item-image {
+        width: 96%;
+        margin-top: 2rem;
+    }
+}
+
+.wellness__item-image:before,
+.wellbeing__item-image:before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 10%;
+    left: 20%;
+    top: -10%;
+    background-color: #E4D9C7;
+    opacity: .5;
+}
+
+.wellness__item-image:after,
+.wellbeing__item-image:after {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 10%;
+    left: 20%;
+    top: 101%;
+    background-color: #E4D9C7;
+    opacity: .5;
+}
+
+.wellness__item-text {
+    width: 45%;
+}
+@media (max-width: 700px) {
+    .wellness__item-text {
+        width: 96%;
+        padding-top: 3rem;
+    }
+}
+@media (max-width: 500px) {
+    .wellness__item-text {
+        width: 96%;
+        padding-top: 2.5rem;
+    }
+}
+@media (max-width: 400px) {
+    .wellness__item-text {
+        width: 96%;
+        padding-top: 2rem;
+    }
+}
+
+.wellness__item-image img {
+    width: 100%
+}
+.wellbeing__item-image img {
+    width: 100%
+}
+
+.wellness__title {
+    font-family: 'Cormorant Garamond Reg', sans-serif;
+    font-size: 3rem;
+    line-height: 3rem;
+    color: #405861;
+    padding-bottom: 1rem;
+}
+@media (max-width: 1280px) {
+    .wellness__title {
+        font-size: calc(1.33rem + (3 - 1.33) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(1.66rem + (3 - 1.66) * ((100vw - 20rem) / (80 - 20)));
+        padding-bottom: calc(.4rem + (1 - .4) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+
+.wellness__text {
+    font-family: 'Open Sans Reg', sans-serif;
+    font-size: .8rem;
+    line-height: 1.33rem;
+    color: #879296;
+    letter-spacing: .033rem;
+    padding-bottom: 2.33rem;
+}
+@media (max-width: 1280px) {
+    .wellness__text {
+        font-size: calc(.66rem + (.8 - .66) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(.9rem + (1.33 - .9) * ((100vw - 20rem) / (80 - 20)));
+        padding-bottom: calc(.7rem + (2.33 - .7) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+
+.wellness__link {
+    font-family: 'Open Sans Reg', sans-serif;
+    font-size: .7rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid #405861;
+    color: #405861;
+    text-decoration: none;
+    transform: translateX(0);
+    transition: 1s;
+    opacity: .8;
+    visibility: visible;
+    display: inline-block;
+    padding: .9rem 2.33rem;
+    font-weight: 600;
+    letter-spacing: .066rem;
+    position: relative;
+    overflow: hidden;
+}
+@media (max-width: 1280px) {
+    .wellness__link {
+        font-size: calc(.4rem + (.7 - .4) * ((100vw - 20rem) / (80 - 20)));
+        padding: calc(.33rem + (.9 - .33) * ((100vw - 20rem) / (80 - 20))) calc(.66rem + (2.33 - .66) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+
+.wellness__link:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: -100%;
+    transition: .5s;
+    background-color: #405861;
+    z-index: -1;
+}
+
+.wellness__link:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.wellness__link:hover:after {
+    left: 0;
+}

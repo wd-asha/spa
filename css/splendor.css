@@ -1,0 +1,117 @@
+.container__splendor {
+    width: 100%;
+    padding: 0 0 4rem 0;
+    background-color: white;
+}
+@media (max-width: 1280px) {
+    .container__splendor {
+        padding-bottom: calc(1.66rem + (4 - 1.66) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+
+.container__splendor-text {
+    padding-left: 2rem;
+    width: 100%;
+}
+@media (max-width: 1280px) {
+    .container__splendor-text {
+        padding-left: calc(0rem + (2 - 0) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+
+#parallax-world-of-ugg .parallax-one {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    overflow: hidden;
+    position: relative;
+    background-image: url("../images/splendor-min.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+@media (max-width: 1280px) {
+    #parallax-world-of-ugg .parallax-one {
+        padding-top: calc(1rem + (8 - 1) * ((100vw - 20rem) / (80 - 20)));
+        padding-bottom: calc(1rem + (8 - 1) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+
+.splendor__title {
+    color: white;
+    font-family: 'Cormorant Garamond Reg', sans-serif;
+    font-size: 3.66rem;
+    line-height: 3.66rem;
+    letter-spacing: 0.03rem;
+    padding-bottom: .66rem;
+    font-weight: 600;
+}
+@media (max-width: 1280px) {
+    .splendor__title {
+        font-size: calc(1.66rem + (3.66 - 1.66) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(1.66rem + (3.66 - 1.66) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+
+.splendor__txt {
+    color: white;
+    font-family: 'Open Sans Reg', sans-serif;
+    font-size: 1rem;
+    line-height: 1.66rem;
+    width: 50%;
+    margin-bottom: 2rem;
+}
+@media (max-width: 1280px) {
+    .splendor__txt {
+        font-size: calc(.66rem + (1 - .66) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(1rem + (1.66 - 1) * ((100vw - 20rem) / (80 - 20)));
+        width: calc(100% + (50 - 50) * ((100vw - 20rem) / (80 - 20)));
+        margin-bottom: calc(1rem + (2 - 1) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+
+.splendor__link {
+    font-family: 'Open Sans Reg', sans-serif;
+    font-size: .7rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 1);
+    color: #405861;
+    text-decoration: none;
+    transform: translateX(0);
+    transition: 1s;
+    opacity: .8;
+    visibility: visible;
+    display: inline-block;
+    padding: .9rem 2.33rem;
+    font-weight: 600;
+    letter-spacing: .066rem;
+    position: relative;
+    overflow: hidden;
+}
+@media (max-width: 1280px) {
+    .splendor__link {
+        font-size: calc(.4rem + (.7 - .4) * ((100vw - 20rem) / (80 - 20)));
+        padding: calc(.33rem + (.9 - .33) * ((100vw - 20rem) / (80 - 20))) calc(.66rem + (2.33 - .66) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+
+.splendor__link:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: -100%;
+    transition: .5s;
+    background-color: #405861;
+    z-index: -1;
+}
+
+.splendor__link:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.splendor__link:hover:after {
+    left: 0;
+}

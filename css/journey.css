@@ -1,0 +1,138 @@
+.journey {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 8.66rem 0 1.33rem 0;
+}
+
+.journey__left {
+    width: 65%;
+}
+
+.journey__left img {
+    width: 100%;
+}
+
+.journey__post_date {
+    padding: 2rem 0 1rem 0;
+    color: black;
+    font-family: "Work Sans Reg",sans-serif;
+    font-size: .66rem;
+    line-height: 1;
+    letter-spacing: .08rem;
+    text-transform: uppercase;
+    opacity: .5;
+}
+
+.journey__title {
+    font-family: "Cormorant Garamond Reg",serif;
+    color: #405861;
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: inherit;
+    padding: 2rem 0 1.33rem 0;
+}
+
+.journey__text {
+    font-family: 'Open Sans Reg', sans-serif;
+    font-size: .85rem;
+    line-height: 1.8;
+    color: #879296;
+    letter-spacing: .02rem;
+    padding-bottom: 2.33rem;
+}
+
+.journey__citation {
+    font-family: 'Cormorant Garamond Reg', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.66rem;
+    color: #879296;
+    letter-spacing: .02rem;
+    padding-left: 3rem;
+    padding-bottom: 2.33rem;
+    font-weight: 600;
+}
+
+.journey__post_images {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.journey__post_image {
+    width: 40%;
+}
+
+.journey__post_image img {
+    width: 100%;
+}
+
+.post_image-note {
+    font-family: 'Open Sans Reg', sans-serif;
+    font-size: .7rem;
+    line-height: 1.66;
+    color: #879296;
+    letter-spacing: .02rem;
+    padding-top: .66rem;
+}
+
+.journey__author {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 4rem 0 4rem 4rem;
+}
+
+.journey__author_image {
+    width: 14%;
+}
+
+.journey__author_image img {
+    width: 100%;
+}
+
+.journey__author_content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.journey__author_name {
+    width: 100%;
+    font-family: 'Cormorant Garamond Reg', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.66rem;
+    color: #475256;
+    letter-spacing: .02rem;
+    padding-bottom: 1rem;
+}
+
+.juorney__author_text {
+    font-family: 'Open Sans Reg', sans-serif;
+    font-size: .85rem;
+    line-height: 1.8;
+    color: #879296;
+    letter-spacing: .02rem;
+    padding-bottom: 1rem;
+}
+
+.journey__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 0 4rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.journey__link {
+    width: auto;
+}
+
+.journey__link:nth-child(1) {
+    text-align: left;
+}
+.journey__link:nth-child(2) {
+    text-align: right;
+}

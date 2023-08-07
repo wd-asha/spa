@@ -1,0 +1,346 @@
+.shop__header {
+    margin: 0 auto;
+    text-align: center;
+    width: 75%;
+    padding: 8.66rem 0 3.33rem 0;
+}
+
+.shop__header img {
+    transform: rotateY(180deg);
+}
+
+.shop__header_title {
+    font-family: "Cormorant Garamond Reg",serif;
+    font-size: 3.33rem;
+    line-height: 1;
+    color: #405861;
+    letter-spacing: .033rem;
+    padding: 1rem 0 2rem 0;
+}
+
+.shop {
+    width: 100%;
+    padding: 0 0 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.shop__list {
+    width: 65%;
+}
+
+.shop__list_header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.shop__list_header-sorting {
+    text-align: right;
+}
+
+.shop__list_header-info,
+.shop__list_header-info span,
+.shop__list_header-sorting select,
+.shop__list_header-sorting select option {
+    font-family: 'Open Sans Reg', sans-serif;
+    font-size: .8rem;
+    line-height: 1.66;
+    color: #879296;
+}
+
+.shop__list_header-sorting select {
+    background-color: transparent;
+    border: none;
+    padding-bottom: .33rem;
+    padding-right: .5rem;
+}
+
+.shop__list_items {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.shop__list_item {
+    width: 31%;
+    transition: .5s;
+    cursor: pointer;
+    padding: .8rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    background-color: #FBFAF8;
+}
+
+.single-link {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.shop__item-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transition: .5s;
+    opacity: 0;
+}
+
+.add_to_cart {
+    font-family: 'Open Sans Reg', sans-serif;
+    font-size: .7rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+    background-color: #92c5da;
+    color: white;
+    text-decoration: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+    visibility: visible;
+    padding: .9rem 2.33rem;
+    font-weight: 600;
+    letter-spacing: .066rem;
+    position: absolute;
+    overflow: hidden;
+}
+
+.add_to_cart:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: -100%;
+    transition: .5s;
+    background-color: #405861;
+    z-index: -1;
+}
+
+.add_to_cart:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.add_to_cart:hover:after {
+    left: 0;
+}
+
+.shop__list_item:hover {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .1);
+}
+
+.shop__list_item:hover .shop__item-overlay {
+    opacity: 1;
+}
+
+.shop__list_item-img {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1.66rem;
+}
+
+.shop__list_item-img img {
+    width: 100%;
+}
+
+.shop__list_item-category {
+    color: #85a3b3;
+    font-family: 'Open Sans Reg', sans-serif;
+    font-size: .9rem;
+    line-height: 1.8rem;
+    text-align: center;
+}
+
+.shop__list_item-title {
+    font-family: "Cormorant Garamond Reg",serif;
+    letter-spacing: -.01em;
+    color: #405861;
+    font-size: 1.33rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.shop__list_item-price {
+    color: #85a3b3;
+    font-family: 'Open Sans Reg', sans-serif;
+    font-size: .8rem;
+    line-height: 1.8rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.shop__list_pagination {
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+.pagination_item {
+    padding: .2rem .66rem .66rem .66rem;
+    color: #82a0b0;
+    font-family: 'Open Sans Reg', sans-serif;
+    font-size: .8rem;
+    line-height: 1.8rem;
+    border-top: 1px solid #bbb;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 600;
+}
+
+.pagination_item:hover {
+    color: #224050;
+}
+
+.shop__options {
+    width: 28%;
+}
+
+.filter {
+    padding-bottom: 1.33rem;
+    margin-bottom: 2rem;
+}
+
+#filter-input {
+    width: 100%;
+    padding: 1rem 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    overflow: hidden;
+    height: 2px;
+}
+
+#filter-input::-webkit-slider-runnable-track {
+    height: 2px;
+    background-color: #92c5da;
+}
+#filter-input::-webkit-slider-thumb {
+    background: #82a0b0;
+    cursor: pointer;
+    width: .66rem;
+    height: .66rem;
+    -webkit-appearance: none;
+    margin-top: -4px;
+    border-radius: 50%;
+}
+
+#filter-input::-moz-range-track {
+    height: 2px;
+    background-color: #92c5da;
+}
+#filter-input::-moz-range-thumb {
+    background: #82a0b0;
+    cursor: pointer;
+    height: .66rem;
+    width: .66rem;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+.filter-title,
+.filter-title span,
+.search-title {
+    width: 100%;
+    font-family: "Cormorant Garamond Reg",serif;
+    color: #405861;
+    font-size: 1.33rem;
+    line-height: 1;
+    padding: 0 0 .33rem 0;
+}
+
+.ba-btn-color {
+    font-family: 'Open Sans Reg', sans-serif;
+    font-size: .7rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+    background-color: #92c5da;
+    color: white;
+    text-decoration: none;
+    transition: .8s;
+    visibility: visible;
+    padding: .8rem;
+    font-weight: 600;
+    letter-spacing: .066rem;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    cursor: pointer;
+}
+
+.ba-btn-color:hover {
+    color: rgba(255, 255, 255, 1);
+    background-color: #405861;
+}
+
+.cloud__categories_title {
+    width: 100%;
+    font-family: "Cormorant Garamond Reg",serif;
+    color: #405861;
+    font-size: 1.33rem;
+    line-height: 1;
+    padding: 0 0 1rem 0;
+}
+
+.search-form {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.search-input {
+    font-family: 'Cormorant Garamond Reg', sans-serif;
+    font-weight: 400;
+    color: #405861;
+    background-color: white;
+    padding: .5rem;
+    border: 1px solid rgba(0, 0, 0, .33);
+    outline: none;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    width: 100%;
+}
+
+.search-submit {
+    color: white;
+    background-color: #92c5da;
+    padding: 0 .75rem .75rem .75rem;
+    border: none;
+    width: 2.55rem;
+    height: 2.55rem;
+    cursor: pointer;
+    transition: .5s;
+}
+.search-submit:hover {
+    color: rgba(255, 255, 255, 1);
+    background-color: #405861;
+}
+
+.search-submit img {
+    width: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.hide-card {
+    display: none;
+}

@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Cormorant Garamond Reg';
+    src: local('Cormorant Garamond Reg'), local('Cormorant Garamond Reg'),
+    url('../fonts/Cormorant_Garamond/CormorantGaramond-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Reg';
+    src: local('Open Sans Reg'), local('Open Sans Reg'),
+    url('../fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans Reg';
+    src: local('Work Sans Reg'), local('Work Sans Reg'),
+    url('../fonts/Work_Sans/WorkSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans Bold';
+    src: local('Work Sans Bold'), local('Work Sans Bold'),
+    url('../fonts/Work_Sans/WorkSans-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}

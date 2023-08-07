@@ -1,0 +1,166 @@
+.services {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1.33rem;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+@media (max-width: 1280px) {
+    .services {
+        padding: calc(1rem + (2 - 1) * ((100vw - 20rem) / (80 - 20))) 0;
+    }
+}
+
+.service {
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+}
+@media (max-width: 750px) {
+    .service {
+        width: 43.33%;
+    }
+}
+@media (max-width: 400px) {
+    .service {
+        width: 90%;
+    }
+}
+
+
+.service img {
+    width: 100%;
+    transition: .5s;
+}
+
+.service:hover > img {
+    transform: scale(1.033);
+}
+
+.service__blank {
+    position: absolute;
+    left: 50%;
+    bottom: 2rem;
+    transform: translateX(-50%);
+    backdrop-filter: blur(5px) saturate(180%);
+    -webkit-backdrop-filter: blur(5px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 80%;
+    padding: 2rem 1.66rem 1rem 1.66rem;
+    text-align: center;
+}
+@media (max-width: 1280px) {
+    .service__blank {
+        padding-top: calc(.66rem + (2 - .66) * ((100vw - 20rem) / (80 - 20)));
+        padding-left: calc(.666rem + (1.66 - .66) * ((100vw - 20rem) / (80 - 20)));
+        padding-right: calc(.66rem + (1.66 - .66) * ((100vw - 20rem) / (80 - 20)));
+        padding-bottom: calc(.33rem + (1 - .33) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+@media (max-width: 400px) {
+    .service__blank {
+        padding: 1rem 2rem 1rem 2rem;
+    }
+}
+
+.service__title {
+    font-family: "Cormorant Garamond Reg",serif;
+    letter-spacing: -.01rem;
+    color: #415962;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 1rem;
+    width: 100%;
+}
+@media (max-width: 1280px) {
+    .service__title {
+        font-size: calc(.7rem + (1.4 - .7) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(.8rem + (1.4 - .7) * ((100vw - 20rem) / (80 - 20)));
+        padding-bottom: calc(.33rem + (1 - .33) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+@media (max-width: 400px) {
+    .service__title {
+        font-size: 1.1rem;
+        line-height: 1.1rem;
+    }
+}
+
+.service__text {
+    font-family: 'Open Sans Reg', sans-serif;
+    font-size: .8rem;
+    line-height: 1.33rem;
+    color: #879296;
+    letter-spacing: .02rem;
+    text-align: center;
+    margin-bottom: .66rem;
+    width: 100%;
+}
+@media (max-width: 1280px) {
+    .service__text {
+        font-size: calc(.33rem + (.8 - .33) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(.4rem + (1.33 - .4) * ((100vw - 20rem) / (80 - 20)));
+        margin-bottom: calc(.1rem + (.66 - .1) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+@media (max-width: 400px) {
+    .service__text {
+        font-size: .5rem;
+        line-height: .66rem;
+    }
+}
+
+.service__link {
+    font-family: "Work Sans Reg",sans-serif;
+    font-size: .8rem;
+    line-height: 1.33rem;
+    font-weight: 400;
+    letter-spacing: .02rem;
+    text-transform: uppercase;
+    color: #415962;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+    position: relative;
+}
+@media (max-width: 1280px) {
+    .service__link {
+        font-size: calc(.35rem + (.8 - .35) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(.4rem + (1.33 - .4) * ((100vw - 20rem) / (80 - 20)));
+        padding: calc(0rem + (1 - 0) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+@media (max-width: 400px) {
+    .service__link {
+        font-size: .5rem;
+        line-height: 1rem;
+    }
+}
+
+
+.service__link:before {
+    content: "";
+    position: absolute;
+    width: 85%;
+    height: .5rem;
+    background-color: #85a3b3;
+    opacity: .33;
+    transition: .5s;
+    left: .5rem;
+    top: 50%;
+}
+@media (max-width: 1280px) {
+    .service__link:before {
+        width: calc(80% + (90 - 90) * ((100vw - 20rem) / (80 - 20)));
+        height: calc(.3rem + (.5 - .3) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+
+.service__link:hover:before {
+    width: 0;
+}

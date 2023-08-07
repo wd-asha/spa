@@ -1,0 +1,79 @@
+.packages {
+    margin: 0 auto;
+    text-align: center;
+    width: 75%;
+    padding: 8.66rem 0 3.33rem 0;
+}
+
+.packages img {
+    transform: rotateY(180deg);
+}
+
+.packages__title {
+    font-family: "Cormorant Garamond Reg",serif;
+    font-size: 3.33rem;
+    line-height: 1;
+    color: #405861;
+    letter-spacing: .033rem;
+    padding: 1rem 0 2rem 0;
+}
+
+.packages__text {
+    font-family: 'Open Sans Reg', sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #879296;
+    letter-spacing: .033rem;
+}
+
+.packages__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 0 4rem 0;
+}
+
+.packages__list-item {
+    width: 16.66%;
+    padding: 0 2rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.packages__list-image {
+    width: 100%;
+    stroke: #808080;
+    fill: none;
+    padding: 0 1rem;
+    transition: .5s;
+}
+
+.packages__list-item:hover .packages__list-image {
+    stroke: #070707;
+}
+
+.packages__list-image svg {
+    width: 100%;
+    stroke: inherit;
+    fill: inherit;
+}
+
+.packages__list-text {
+    text-align: center;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8rem;
+    line-height: 1;
+    font-family: "Work Sans",sans-serif;
+    letter-spacing: .08rem;
+    color: #85a3b3;
+    transition: .5s;
+}
+
+.packages__list-item:hover .packages__list-text {
+    color: #070707;
+}
+

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Beauty and Spa Center | Cart</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="fix-header">
+    <div class="container">
+        <div class="header">
+            <a href="" class="fix-logo">
+                <img src="images/mobile-logo.png" alt="">
+                <h1 class="fix-logo__title">REINA</h1>
+            </a>
+            <nav class="fix-nav">
+                <div class="fix-nav__left">
+                    <a href="index.html" class="fix-nav__item">Home</a>
+                    <a href="services.html" class="fix-nav__item">Services</a>
+                    <a href="offers.html" class="fix-nav__item">Offers</a>
+                    <a href="team.html" class="fix-nav__item">Team</a>
+                    <a href="blog.html" class="fix-nav__item">Blog</a>
+                    <a href="shop.html" class="fix-nav__item">Shop</a>
+                    <a href="cart.html" class="fix-nav__item">
+                        <img src="images/shopping-bag-black.png" alt="">
+                        <div class="count__cart">2</div>
+                    </a>
+                </div>
+                <div class="fix-nav__right">
+                    <a href="" class="fix-book__link">book now</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<section>
+    <div class="cart__image">
+        <img src="images/bg-cart-min.jpg" alt="">
+        <div class="cart__image_title">Cart</div>
+    </div>
+    <div class="container">
+        <div class="cart">
+            <div class="cart__title">Your purchases</div>
+            <div class="cart__products">
+                <div class="cart__products_title font-white">Delete</div>
+                <div class="cart__products_title font-white">Image</div>
+                <div class="cart__products_title">Product</div>
+                <div class="cart__products_title">Price</div>
+                <div class="cart__products_title">Quantity</div>
+                <div class="cart__products_title">Subtotal</div>
+                <div class="cart__products_delete">&times</div>
+                <div class="cart__products_image">
+                    <img src="images/shop/shop-img1-min.jpg" alt="">
+                </div>
+                <div class="cart__products_name">Body Milk</div>
+                <div class="cart__products_price">$<span id="price">38.00</span></div>
+                <div class="cart__products_qty">
+                    <div class="cart__qty">
+                        <div class="qty__number" id="qtyNumber">1</div>
+                        <div class="qty__plus" id="qtyPlus">+</div>
+                        <div class="qty__minus" id="qtyMinus">–</div>
+                    </div>
+                </div>
+                <div class="cart__products_subtotal">$<span id="subtotal">38.00</span></div>
+
+                <div class="cart__products_delete">&times</div>
+                <div class="cart__products_image">
+                    <img src="images/shop/shop-img3-min.jpg" alt="">
+                </div>
+                <div class="cart__products_name">Body Lotion</div>
+                <div class="cart__products_price">$<span id="price2">35.45</span></div>
+                <div class="cart__products_qty">
+                    <div class="cart__qty">
+                        <div class="qty__number" id="qtyNumber2">1</div>
+                        <div class="qty__plus" id="qtyPlus2">+</div>
+                        <div class="qty__minus" id="qtyMinus2">–</div>
+                    </div>
+                </div>
+                <div class="cart__products_subtotal">$<span id="subtotal2"> 35.45</span></div>
+            </div>
+
+            <div class="coupon">
+                <div class="coupon__left">
+                    <input type="text" placeholder="Coupon Code">
+                    <a href="" class="coupon__link">Apply Coupon</a>
+                </div>
+                <div class="coupon__right">
+                    Total: $<span id="check"></span>
+                </div>
+            </div>
+
+            <div class="checkout">
+                <a href="" class="coupon__link">Checkout</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer__form">
+        <div class="footer__form-title">Join Our Newsletter</div>
+        <form method="post" action="" name="subscribe">
+            <input type="email" placeholder="email address" \>
+            <a href="" type="submit" name="submit" class="footer__form-link">subscribe</a>
+        </form>
+    </div>
+    <div class="container">
+    <div class="footer__items">
+        <div class="footer__item">
+            <div class="footer__item-title">Reina Spa Center</div>
+            <div class="footer__item-text">Step into an oasis of magnificence we devised for your new beauty center, resort or spa site. We are sure you’ll love your time with Reina</div>
+        </div>
+        <div class="footer__item">
+            <div class="footer__item-title center">Important Links</div>
+            <a href="" class="footer__item-link center">Purchase a Gift Certificate</a>
+            <a href="" class="footer__item-link center">Exclusive Offers & Events</a>
+            <a href="" class="footer__item-link center">Spa Promotions</a>
+            <a href="" class="footer__item-link center">Blog and News</a>
+        </div>
+        <div class="footer__item">
+            <div class="footer__item-title center">Contact Us</div>
+            <a href="" class="footer__item-link center">Vesturbraut 17-3Keflavík, Iceland</a>
+            <a href="mailto:reina@qodeinteractive.com" class="footer__item-link center">reina@qodeinteractive.com</a>
+            <a href="tel:351258548" class="footer__item-link center">Phone: +351 258 548</a>
+        </div>
+        <div class="footer__item">
+            <div class="footer__item-title right">Opening Hours</div>
+            <div class="footer__item-text right">Monday to Friday: 09:00 - 20:00 hrs<br>Saturday: 09:00 - 18:00 hrs<br>Sunday: 09:00 - 18:00 hrs</div>
+        </div>
+    </div>
+    </div>
+</footer>
+
+<script>
+    let qtyNumber = document.querySelector("#qtyNumber");
+    let qtyPlus = document.querySelector("#qtyPlus");
+    let qtyMinus = document.querySelector("#qtyMinus");
+    let subTotal = document.querySelector("#subtotal");
+    let price = document.querySelector("#price");
+    let qtyNumber2 = document.querySelector("#qtyNumber2");
+    let qtyPlus2 = document.querySelector("#qtyPlus2");
+    let qtyMinus2 = document.querySelector("#qtyMinus2");
+    let subTotal2 = document.querySelector("#subtotal2");
+    let price2 = document.querySelector("#price2");
+    let check = document.querySelector("#check");
+
+    qty = Number(qtyNumber.innerHTML);
+    priceOne = Number(price.innerHTML);
+    qty2 = Number(qtyNumber2.innerHTML);
+    priceOne2 = Number(price2.innerHTML);
+    total = Number(subTotal.innerHTML) + Number(subTotal2.innerHTML);
+    check.innerHTML = total;
+
+    qtyPlus.addEventListener('click', function () {
+        qty = qty + 1;
+        qtyNumber.innerHTML = qty;
+        subTotal.innerHTML = (priceOne * qty).toFixed(2);
+        total = Number(subTotal.innerHTML) + Number(subTotal2.innerHTML);
+        check.innerHTML = total;
+    });
+
+    qtyMinus.addEventListener('click', function () {
+        if (qty !== 1) {
+            qty = qty - 1;
+        }
+        qtyNumber.innerHTML = qty;
+        subTotal.innerHTML = (priceOne * qty).toFixed(2);
+        total = Number(subTotal.innerHTML) + Number(subTotal2.innerHTML);
+        check.innerHTML = total;
+    });
+
+    qtyPlus2.addEventListener('click', function () {
+        qty2 = qty2 + 1;
+        qtyNumber2.innerHTML = qty2;
+        subTotal2.innerHTML = (priceOne2 * qty2).toFixed(2);
+        total = Number(subTotal.innerHTML) + Number(subTotal2.innerHTML);
+        check.innerHTML = total;
+    });
+
+    qtyMinus2.addEventListener('click', function () {
+        if (qty2 !== 1) {
+            qty2 = qty2 - 1;
+        }
+        qtyNumber2.innerHTML = qty2;
+        subTotal2.innerHTML = (priceOne2 * qty2).toFixed(2);
+        total = Number(subTotal.innerHTML) + Number(subTotal2.innerHTML);
+        check.innerHTML = total;
+    });
+</script>
+
+</body>
+</html>

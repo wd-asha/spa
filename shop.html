@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Beauty and Spa Center - Shop</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="fix-header">
+    <div class="container">
+        <div class="header">
+            <a href="" class="fix-logo">
+                <img src="images/mobile-logo.png" alt="">
+                <h1 class="fix-logo__title">REINA</h1>
+            </a>
+            <nav class="fix-nav">
+                <div class="fix-nav__left">
+                    <a href="index.html" class="fix-nav__item">Home</a>
+                    <a href="services.html" class="fix-nav__item">Services</a>
+                    <a href="offers.html" class="fix-nav__item">Offers</a>
+                    <a href="team.html" class="fix-nav__item">Team</a>
+                    <a href="blog.html" class="fix-nav__item">Blog</a>
+                    <a href="shop.html" class="fix-nav__item">Shop</a>
+                    <a href="cart.html" class="fix-nav__item">
+                        <img src="images/shopping-bag-black.png" alt="">
+                        <div class="count__cart">2</div>
+                    </a>
+                </div>
+                <div class="fix-nav__right">
+                    <a href="" class="fix-book__link">book now</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<section>
+    <div class="container">
+        <div class="shop__header">
+            <img src="images/h1-blog-list-flower.png" alt="">
+            <div class="shop__header_title">Shop</div>
+        </div>
+        <div class="shop">
+            <div class="shop__list">
+                <div class="shop__list_header">
+                    <div class="shop__list_header-info">
+                        Showing <span id="count__items"></span> of 54 results
+                    </div>
+                    <div class="shop__list_header-sorting">
+                        <select id="globo-dropdown-sort_options" class="globo-dropdown-custom__options">
+                            <option>Default sorting</option>
+                            <option class="sorting-method" data-sort="title-ascending" onclick="changeSortBy('title-ascending');">Sort by Alphabet</option>
+                            <option class="sorting-method" data-sort="price-ascending" onclick="changeSortBy('price-ascending');">Sort by price, low to high</option>
+                            <option class="sorting-method" data-sort="price-descending" onclick="changeSortBy('price-descending');">Sort by price, high to low</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="shop__list_items">
+
+                    <div class="shop__list_item shop-item" data-price="38" data-name="BODY MILK">
+                        <div class="shop__list_item-img">
+                            <img src="images/shop/shop-img1-min.jpg" alt="">
+                        </div>
+                        <div class="shop__list_item-category">Design</div>
+                        <div class="shop__list_item-title">Body Milk</div>
+                        <div class="shop__list_item-price">$38.00</div>
+                        <a href="body-milk.html" class="single-link">
+                            <div class="shop__item-overlay">
+                                <a href="" class="add_to_cart">ADD&nbsp;TO&nbsp;CART</a>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="shop__list_item shop-item" data-price="32" data-name="HAND WASH">
+                        <div class="shop__list_item-img">
+                            <img src="images/shop/shop-img2-min.jpg" alt="">
+                        </div>
+                        <div class="shop__list_item-category">Design</div>
+                        <div class="shop__list_item-title">Hand Wash</div>
+                        <div class="shop__list_item-price">$32.00</div>
+                        <a href="hand-wash.html" class="single-link">
+                            <div class="shop__item-overlay">
+                                <a href="" class="add_to_cart">ADD&nbsp;TO&nbsp;CART</a>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="shop__list_item shop-item" data-price="35" data-name="BODY LOTION">
+                        <div class="shop__list_item-img">
+                            <img src="images/shop/shop-img3-min.jpg" alt="">
+                        </div>
+                        <div class="shop__list_item-category">Design</div>
+                        <div class="shop__list_item-title">Body Lotion</div>
+                        <div class="shop__list_item-price">$35.45</div>
+                        <a href="body-lotion.html" class="single-link">
+                            <div class="shop__item-overlay">
+                                <a href="" class="add_to_cart">ADD&nbsp;TO&nbsp;CART</a>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="shop__list_item shop-item" data-price="28" data-name="BODY BRUSH">
+                        <div class="shop__list_item-img">
+                            <img src="images/shop/shop-img4-min.jpg" alt="">
+                        </div>
+                        <div class="shop__list_item-category">Design</div>
+                        <div class="shop__list_item-title">Body Brush</div>
+                        <div class="shop__list_item-price">$28.50</div>
+                        <div class="shop__item-overlay">
+                            <a href="" class="add_to_cart">ADD&nbsp;TO&nbsp;CART</a>
+                        </div>
+                    </div>
+
+                    <div class="shop__list_item shop-item" data-price="33" data-name="NATURAL SOAP">
+                        <div class="shop__list_item-img">
+                            <img src="images/shop/shop-img5-min.jpg" alt="">
+                        </div>
+                        <div class="shop__list_item-category">
+                            Design
+                        </div>
+                        <div class="shop__list_item-title">
+                            Natural Soap
+                        </div>
+                        <div class="shop__list_item-price">
+                            $33.50
+                        </div>
+                        <div class="shop__item-overlay">
+                            <a href="" class="add_to_cart">ADD&nbsp;TO&nbsp;CART</a>
+                        </div>
+                    </div>
+
+                    <div class="shop__list_item shop-item" data-price="49" data-name="FACE CREAM">
+                        <div class="shop__list_item-img">
+                            <img src="images/shop/shop-img6-min.jpg" alt="">
+                        </div>
+                        <div class="shop__list_item-category">
+                            Design
+                        </div>
+                        <div class="shop__list_item-title">
+                            Face Cream
+                        </div>
+                        <div class="shop__list_item-price">
+                            $49.00
+                        </div>
+                        <div class="shop__item-overlay">
+                            <a href="" class="add_to_cart">ADD&nbsp;TO&nbsp;CART</a>
+                        </div>
+                    </div>
+
+                    <div class="shop__list_item shop-item" data-price="38" data-name="DAILY LOTION">
+                        <div class="shop__list_item-img">
+                            <img src="images/shop/shop-img7-min.jpg" alt="">
+                        </div>
+                        <div class="shop__list_item-category">
+                            Design
+                        </div>
+                        <div class="shop__list_item-title">
+                            Daily Lotion
+                        </div>
+                        <div class="shop__list_item-price">
+                            $38.50
+                        </div>
+                        <div class="shop__item-overlay">
+                            <a href="" class="add_to_cart">ADD&nbsp;TO&nbsp;CART</a>
+                        </div>
+                    </div>
+
+                    <div class="shop__list_item shop-item" data-price="22" data-name="HEEL STONE">
+                        <div class="shop__list_item-img">
+                            <img src="images/shop/shop-img8-min.jpg" alt="">
+                        </div>
+                        <div class="shop__list_item-category">
+                            Design
+                        </div>
+                        <div class="shop__list_item-title">
+                            Heel Stone
+                        </div>
+                        <div class="shop__list_item-price">
+                            $22.00
+                        </div>
+                        <div class="shop__item-overlay">
+                            <a href="" class="add_to_cart">ADD&nbsp;TO&nbsp;CART</a>
+                        </div>
+                    </div>
+
+                    <div class="shop__list_item shop-item" data-price="33" data-name="BODY SCRUB">
+                        <div class="shop__list_item-img">
+                            <img src="images/shop/shop-img9-min.jpg" alt="">
+                        </div>
+                        <div class="shop__list_item-category">
+                            Design
+                        </div>
+                        <div class="shop__list_item-title">
+                            Body Scrub
+                        </div>
+                        <div class="shop__list_item-price">
+                            $33.00
+                        </div>
+                        <div class="shop__item-overlay">
+                            <a href="" class="add_to_cart">ADD&nbsp;TO&nbsp;CART</a>
+                        </div>
+                    </div>
+
+                    <div class="shop__list_item shop-item" data-price="55" data-name="OILY SKIN">
+                        <div class="shop__list_item-img">
+                            <img src="images/shop/shop-img10-min.jpg" alt="">
+                        </div>
+                        <div class="shop__list_item-category">Design</div>
+                        <div class="shop__list_item-title">Oily Skin</div>
+                        <div class="shop__list_item-price">$55.00</div>
+                        <div class="shop__item-overlay">
+                            <a href="" class="add_to_cart">ADD&nbsp;TO&nbsp;CART</a>
+                        </div>
+                    </div>
+
+                    <div class="shop__list_item shop-item" data-price="26" data-name="JOJOBA OIL">
+                        <div class="shop__list_item-img">
+                            <img src="images/shop/shop-img11-min.jpg" alt="">
+                        </div>
+                        <div class="shop__list_item-category">Design</div>
+                        <div class="shop__list_item-title">Jojoba Oil</div>
+                        <div class="shop__list_item-price">$26.00</div>
+                        <div class="shop__item-overlay">
+                            <a href="" class="add_to_cart">ADD&nbsp;TO&nbsp;CART</a>
+                        </div>
+                    </div>
+
+                    <div class="shop__list_item shop-item" data-price="29" data-name="ALMOND OIL">
+                        <div class="shop__list_item-img">
+                            <img src="images/shop/shop-img12-min.jpg" alt="">
+                        </div>
+                        <div class="shop__list_item-category">Design</div>
+                        <div class="shop__list_item-title">Almond Oil</div>
+                        <div class="shop__list_item-price">$29.00</div>
+                        <div class="shop__item-overlay">
+                            <a href="" class="add_to_cart">ADD&nbsp;TO&nbsp;CART</a>
+                        </div>
+                    </div>
+
+                    <div class="shop__list_item shop-item" data-price="15" data-name="SOUP CHERRY">
+                        <div class="shop__list_item-img">
+                            <img src="images/shop/shop-img13-min.jpg" alt="">
+                        </div>
+                        <div class="shop__list_item-category">Design</div>
+                        <div class="shop__list_item-title">Soap Cherry</div>
+                        <div class="shop__list_item-price">$15.00</div>
+                        <div class="shop__item-overlay">
+                            <a href="" class="add_to_cart">ADD&nbsp;TO&nbsp;CART</a>
+                        </div>
+                    </div>
+
+                    <div class="shop__list_item shop-item" data-price="57" data-name="DRY SKIN">
+                        <div class="shop__list_item-img">
+                            <img src="images/shop/shop-img14-min.jpg" alt="">
+                        </div>
+                        <div class="shop__list_item-category">Design</div>
+                        <div class="shop__list_item-title">Dry Skin</div>
+                        <div class="shop__list_item-price">$57.00</div>
+                        <div class="shop__item-overlay">
+                            <a href="" class="add_to_cart">ADD&nbsp;TO&nbsp;CART</a>
+                        </div>
+                    </div>
+
+                    <div class="shop__list_item shop-item" data-price="17" data-name="TRAVEL KIT">
+                        <div class="shop__list_item-img">
+                            <img src="images/shop/shop-img15-min.jpg" alt="">
+                        </div>
+                        <div class="shop__list_item-category">Design</div>
+                        <div class="shop__list_item-title">Travel Kit</div>
+                        <div class="shop__list_item-price">$17.50</div>
+                        <div class="shop__item-overlay">
+                            <a href="" class="add_to_cart">ADD&nbsp;TO&nbsp;CART</a>
+                        </div>
+                    </div>
+
+                    <div class="shop__list_item shop-item" data-price="47" data-name="SPRAY">
+                        <div class="shop__list_item-img">
+                            <img src="images/shop/shop-img16-min.jpg" alt="">
+                        </div>
+                        <div class="shop__list_item-category">Beauty</div>
+                        <div class="shop__list_item-title">Spray</div>
+                        <div class="shop__list_item-price">$47.50</div>
+                        <div class="shop__item-overlay">
+                            <a href="" class="add_to_cart">ADD&nbsp;TO&nbsp;CART</a>
+                        </div>
+                    </div>
+
+                    <div class="shop__list_item shop-item" data-price="29" data-name="SHOWER GEL">
+                        <div class="shop__list_item-img">
+                            <img src="images/shop/shop-img17-min.jpg" alt="">
+                        </div>
+                        <div class="shop__list_item-category">Cosmetics</div>
+                        <div class="shop__list_item-title">Shower Gel</div>
+                        <div class="shop__list_item-price">$29.00</div>
+                        <div class="shop__item-overlay">
+                            <a href="" class="add_to_cart">ADD&nbsp;TO&nbsp;CART</a>
+                        </div>
+                    </div>
+
+                    <div class="shop__list_item shop-item" data-price="49" data-name="FACE">
+                        <div class="shop__list_item-img">
+                            <img src="images/shop/shop-img18-min.jpg" alt="">
+                        </div>
+                        <div class="shop__list_item-category">Moisturizing</div>
+                        <div class="shop__list_item-title">Face</div>
+                        <div class="shop__list_item-price">$49.00</div>
+                        <div class="shop__item-overlay">
+                            <a href="" class="add_to_cart">ADD&nbsp;TO&nbsp;CART</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop__list_pagination">
+                    <div class="pagination_item">1</div>
+                    <div class="pagination_item">2</div>
+                    <div class="pagination_item">3</div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="shop__options">
+                <!-- Filtering Items -->
+                <div class="filter">
+                    <div class="filter-title">Filter by Price ($0 - $<span id="filter-price">60</span>)</div>
+                    <input type="range" id="filter-input" min="0" max="60" value="60" step="1" />
+                    <div class="filter-submit">
+                        <button class="ba-btn-color" id="filter-btn" type="submit">FILTER</button>
+                    </div>
+                </div>
+                <!-- end filtering items -->
+                <!-- Cloud Categories -->
+                <div class="cloud__categories">
+                    <div class="cloud__categories_title">Categories</div>
+                    <div class="categories">
+                        <div class="category">Bath Set</div>
+                        <div class="category">Bath Soap</div>
+                        <div class="category">Beauty</div>
+                        <div class="category">Cosmetics</div>
+                        <div class="category">Design</div>
+                        <div class="category">Moisturizing</div>
+                        <div class="category">Wellness</div>
+                    </div>
+                </div>
+                <!-- end cloud categories -->
+                <!-- Search -->
+                <div class="search-box">
+                    <div class="search-title">Search</div>
+                    <div class="search-form">
+                        <label for="elastic"></label>
+                        <input type="email" class="search-input" id="elastic" placeholder="Search Product">
+                        <button type="submit" class="search-submit">
+                            <img src="images/glass.png" alt="">
+                        </button>
+                    </div>
+                </div>
+                <!-- end search -->
+            </div>
+            <!-- end right column -->
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer__form">
+        <div class="footer__form-title">Join Our Newsletter</div>
+        <form method="post" action="" name="subscribe">
+            <input type="email" placeholder="email address">
+            <a href="" type="submit" name="submit" class="footer__form-link">subscribe</a>
+        </form>
+    </div>
+    <div class="container">
+    <div class="footer__items">
+        <div class="footer__item">
+            <div class="footer__item-title">Reina Spa Center</div>
+            <div class="footer__item-text">Step into an oasis of magnificence we devised for your new beauty center, resort or spa site. We are sure you’ll love your time with Reina</div>
+        </div>
+        <div class="footer__item">
+            <div class="footer__item-title center">Important Links</div>
+            <a href="" class="footer__item-link center">Purchase a Gift Certificate</a>
+            <a href="" class="footer__item-link center">Exclusive Offers & Events</a>
+            <a href="" class="footer__item-link center">Spa Promotions</a>
+            <a href="" class="footer__item-link center">Blog and News</a>
+        </div>
+        <div class="footer__item">
+            <div class="footer__item-title center">Contact Us</div>
+            <a href="" class="footer__item-link center">Vesturbraut 17-3Keflavík, Iceland</a>
+            <a href="mailto:reina@qodeinteractive.com" class="footer__item-link center">reina@qodeinteractive.com</a>
+            <a href="tel:351258548" class="footer__item-link center">Phone: +351 258 548</a>
+        </div>
+        <div class="footer__item">
+            <div class="footer__item-title right">Opening Hours</div>
+            <div class="footer__item-text right">Monday to Friday: 09:00 - 20:00 hrs<br>Saturday: 09:00 - 18:00 hrs<br>Sunday: 09:00 - 18:00 hrs</div>
+        </div>
+    </div>
+    </div>
+</footer>
+
+<script src="js/jquery.js"></script>
+<script src="js/filter.js"></script>
+<script src="js/tinysort.js"></script>
+<script src="js/search.js"></script>
+<script>
+    function changeSortBy(param) {
+        let globo = document.querySelector('.globo-dropdown-custom__options');
+
+        if(param === "price-ascending") {
+            tinysort.defaults.order = 'asc';
+            tinysort('.shop-item', {attr: 'data-price'});
+        }
+        if(param === "price-descending") {
+            tinysort.defaults.order = 'desc';
+            tinysort('.shop-item', {attr: 'data-price'});
+        }
+        if(param === "title-ascending") {
+            tinysort.defaults.order = 'asc';
+            tinysort('.shop-item', {attr: 'data-name'});
+        }
+        if(param === "title-descending") {
+            tinysort.defaults.order = 'desc';
+            tinysort('.shop-item', {attr: 'data-name'});
+        }
+    }
+</script>
+</body>
+</html>

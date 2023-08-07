@@ -1,0 +1,48 @@
+.beauty {
+    margin: 0 auto;
+    text-align: center;
+    width: 75%;
+    padding: 3.66rem 0 3.33rem 0;
+}
+@media (max-width: 1280px) {
+    .beauty {
+        width: calc(94% + (75 - 94) * ((100vw - 20rem) / (80 - 20)));
+        padding-top: calc(1.33rem + (3.66 - 1.33) * ((100vw - 20rem) / (80 - 20)));
+        padding-bottom: calc(1rem + (3.33 - 1) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+
+.beauty img {
+    transform: rotateY(180deg);
+    width: 10%;
+}
+
+.beauty__title {
+    font-family: "Cormorant Garamond Reg",serif;
+    font-size: 3.33rem;
+    line-height: 1;
+    color: #405861;
+    letter-spacing: .033rem;
+    padding: 1rem 0 2rem 0;
+}
+@media (max-width: 1280px) {
+    .beauty__title {
+        font-size: calc(1.33rem + (3.33 - 1.33) * ((100vw - 20rem) / (80 - 20)));
+        padding-top: calc(.66rem + (1 - .66) * ((100vw - 20rem) / (80 - 20)));
+        padding-bottom: calc(.66rem + (2 - .66) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+
+.beauty__text {
+    font-family: 'Open Sans Reg', sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #879296;
+    letter-spacing: .02rem;
+}
+@media (max-width: 1280px) {
+    .beauty__text {
+        font-size: calc(.66rem + (1 - .66) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(1rem + (1.8 - 1) * ((100vw - 20rem) / (80 - 20)));
+    }
+}

@@ -1,0 +1,184 @@
+.offers {
+    margin: 0 auto;
+    text-align: center;
+    width: 75%;
+    padding: 8.66rem 0 3.33rem 0;
+}
+
+.offers__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 1rem 0 4rem 0;
+}
+
+.offers__item {
+    width: 32%;
+    padding: 4rem 2rem;
+    text-align: center;
+    /*border-top-left-radius: 8rem 4rem;
+    border-bottom-right-radius: 8rem 4rem;*/
+}
+
+.offers__item:nth-child(1) {
+    background-color: #eeffee;
+}
+
+.offers__item:nth-child(2) {
+    background-color: #F2FAFD;
+}
+
+.offers__item:nth-child(3) {
+    background-color: #FFF9F5;
+}
+
+.offers__item-title {
+    font-family: "Cormorant Garamond Reg", serif;
+    font-size: 2rem;
+    line-height: 1;
+    color: #415962;
+    margin-bottom: .33rem;
+}
+
+.offers__item-price {
+    font-family: "Cormorant Garamond Reg", serif;
+    color: #D1AB7D;
+    font-size: 3.66rem;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+
+.offers__item-price span {
+    font-family: "Cormorant Garamond Reg", serif;
+    color: #879296;
+    font-size: 1.33rem;
+    line-height: 1;
+}
+
+.offers__item-text {
+    margin-bottom: 3rem;
+}
+
+.offers__item-text p {
+    font-family: 'Open Sans Reg', sans-serif;
+    font-size: .8rem;
+    line-height: 1.8;
+    color: #879296;
+    letter-spacing: .033rem;
+}
+
+.offers__item-link {
+    font-family: 'Open Sans Reg', sans-serif;
+    font-size: .7rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid #405861;
+    color: #405861;
+    text-decoration: none;
+    transform: translateX(0);
+    transition: 1s;
+    opacity: .8;
+    visibility: visible;
+    display: inline-block;
+    padding: .9rem 2.33rem;
+    font-weight: 600;
+    letter-spacing: .066rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.offers__item-link:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: -100%;
+    transition: .5s;
+    background-color: #405861;
+    z-index: -1;
+}
+
+.offers__item-link:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.offers__item-link:hover:after {
+    left: 0;
+}
+
+.voucher {
+    width: 100%;
+    padding: 3rem;
+    margin: 0 0 4rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #F8F8F4;
+}
+
+.voucher__image {
+    width: 33.33%;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.voucher__image img {
+    width: 100%;
+}
+
+.voucher__text {
+    width: 66.66%;
+    padding: 0 1rem;
+}
+
+.voucher__title {
+    font-family: "Cormorant Garamond Reg",serif;
+    color: #405861;
+    font-size: 2.8rem;
+    line-height: 1;
+    padding-bottom: 1.33rem;
+}
+
+.voucher__txt {
+    font-family: "Open Sans Reg", serif;
+    color: #A1B8C4;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    margin-bottom: .33rem;
+}
+
+.voucher__link {
+    font-family: "Work Sans Reg",sans-serif;
+    font-size: .8rem;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: .02rem;
+    text-transform: uppercase;
+    color: #415962;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+    position: relative;
+}
+
+.voucher__link:before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: .5rem;
+    background-color: #85a3b3;
+    opacity: .33;
+    transition: .5s;
+    left: .66rem;
+    top: 50%;
+}
+
+.voucher__link:hover:before {
+    width: 0;
+}

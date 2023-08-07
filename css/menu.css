@@ -1,0 +1,140 @@
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 4rem;
+}
+@media (max-width: 1280px) {
+    .menu {
+        padding-top: calc(2rem + (4 - 2) * ((100vw - 20rem) / (80 - 20)));
+        padding-bottom: calc(1.5rem + (4 - 1.5) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+
+.menu__item {
+    width: 47%;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 1280px) {
+    .menu__item {
+        margin-bottom: calc(.5rem + (2 - .5) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+@media (max-width: 600px) {
+    .menu__item {
+        width: 96%;
+    }
+}
+
+.menu__item-image {
+    width: 15%;
+    stroke: #405861;
+    fill: #02010100;
+}
+@media (max-width: 900px) {
+    .menu__item-image {
+        width: 22%;
+    }
+}
+@media (max-width: 800px) {
+    .menu__item-image {
+        width: 20%;
+    }
+}
+@media (max-width: 700px) {
+    .menu__item-image {
+        width: 25%;
+    }
+}
+@media (max-width: 600px) {
+    .menu__item-image {
+        width: 13%;
+    }
+}
+@media (max-width: 500px) {
+    .menu__item-image {
+        width: 16%;
+    }
+}
+@media (max-width: 400px) {
+    .menu__item-image {
+        width: 22%;
+    }
+}
+
+.menu__item-image svg {
+    stroke-width: 1.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+    width: 100%;
+    padding-right: 1rem;
+}
+
+.menu__item-text {
+    width: 85%;
+}
+
+.price__top {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.price__top-title {
+    font-family: "Cormorant Garamond Reg",serif;
+    letter-spacing: -.01em;
+    color: #405861;
+    font-size: 1.4rem;
+    line-height: 1;
+    font-weight: 500;
+    flex-grow: 1;
+}
+@media (max-width: 1280px) {
+    .price__top-title {
+        font-size: calc(1.1rem + (1.4 - 1.1) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+
+.line {
+    position: relative;
+    flex-grow: 10;
+    border: 1px dotted #b1b1b1;
+    transform: translateY(-.2rem);
+}
+
+.price {
+    flex-grow: 1;
+    text-align: right;
+    font-family: "Cormorant Garamond Reg",serif;
+    font-size: 1.66rem;
+    line-height: 1;
+    font-weight: 500;
+    color: #405861;
+}
+@media (max-width: 1280px) {
+    .price {
+        font-size: calc(1.1rem + (1.66 - 1.1) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+
+.price__bottom {
+    font-family: 'Open Sans Reg', sans-serif;
+    font-size: .8rem;
+    line-height: 1.5rem;
+    color: #879296;
+    letter-spacing: .033rem;
+    padding-top: .33rem;
+}
+@media (max-width: 1280px) {
+    .price__bottom {
+        font-size: calc(.6rem + (.8 - .6) * ((100vw - 20rem) / (80 - 20)));
+        line-height: calc(.8rem + (1.5 - .8) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
