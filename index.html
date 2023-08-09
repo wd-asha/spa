@@ -10,15 +10,36 @@
 </head>
 <body>
 
-<!--<div class="fix-header">
-    <div class="container">
+<div class="menu__mobile" id="menuMobile">
+    <a href="#" class="btn__close" id="btnClose">&times;</a>
+    <a href="index.html" class="mobile__item">Home</a>
+    <a href="services.html" class="mobile__item">Services</a>
+    <a href="offers.html" class="mobile__item">Offers</a>
+    <a href="team.html" class="mobile__item">Team</a>
+    <a href="blog.html" class="mobile__item">Blog</a>
+    <a href="shop.html" class="mobile__item">Shop</a>
+    <a href="cart.html" class="mobile__item">Cart</a>
+</div>
+
+<div class="fix-header">
+    <div class="fix-menu__mobile" id="fixMenuMobile">
+        <a href="#" class="fix-btn__close" id="fixBtnClose">&times;</a>
+        <a href="index.html" class="fix-mobile__item">Home</a>
+        <a href="services.html" class="fix-mobile__item">Services</a>
+        <a href="offers.html" class="fix-mobile__item">Offers</a>
+        <a href="team.html" class="fix-mobile__item">Team</a>
+        <a href="blog.html" class="fix-mobile__item">Blog</a>
+        <a href="shop.html" class="fix-mobile__item">Shop</a>
+        <a href="cart.html" class="fix-mobile__item">Cart</a>
+    </div>
+    <div class="fix-container">
         <div class="header">
             <a href="" class="fix-logo">
                 <img src="images/mobile-logo.png" alt="">
                 <h1 class="fix-logo__title">REINA</h1>
             </a>
             <nav class="fix-nav">
-                <div class="fix-burger">
+                <div class="fix-burger" id="fixBurger">
                     <div class="fix-burger__bar" id="bar4"></div>
                     <div class="fix-burger__bar" id="bar5"></div>
                     <div class="fix-burger__bar" id="bar6"></div>
@@ -41,7 +62,7 @@
             </nav>
         </div>
     </div>
-</div>-->
+</div>
 
 <div class="bg-header">
     <div class="container">
@@ -51,7 +72,7 @@
                 <h1 class="logo__title">REINA</h1>
             </a>
             <nav class="nav">
-                <div class="burger">
+                <div class="burger" id="burger">
                     <div class="burger__bar" id="bar1"></div>
                     <div class="burger__bar" id="bar2"></div>
                     <div class="burger__bar" id="bar3"></div>
@@ -917,6 +938,26 @@
             fixHeader.slideUp(600);
         }
     });
+</script>
+<script>
+    let menuMobile = document.getElementById("menuMobile");
+    let fixMenuMobile = document.getElementById("fixMenuMobile");
+    let burger = document.getElementById("burger");
+    let fixBurger = document.getElementById("fixBurger");
+    let btnClose = document.getElementById("btnClose");
+    let fixBtnClose = document.getElementById("fixBtnClose");
+    burger.addEventListener("click", function () {
+      menuMobile.classList.add("show");
+    })
+    fixBurger.addEventListener("click", function () {
+      fixMenuMobile.classList.add("show");
+    })
+    btnClose.addEventListener("click", function () {
+      menuMobile.classList.remove("show");
+    })
+    fixBtnClose.addEventListener("click", function () {
+      fixMenuMobile.classList.remove("show");
+    })
 </script>
 </body>
 </html>
